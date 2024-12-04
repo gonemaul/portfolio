@@ -1,0 +1,82 @@
+/* Footer Area css
+============================================================================================ */
+.blog_version {
+    .footer_area {
+        background: #f9f9fd;
+        &:before {
+            content: none;
+        }
+    }
+}
+.footer_area {
+    background: $dark-mode;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    position: relative;
+    // border-top: 2px solid $primary-color;
+    border: none;
+    box-shadow: 0px -4px 40px 5px rgba(118, 85, 225, 0.3);
+    &:before {
+        content: "";
+        position: absolute;
+        top: -200px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: #f9f9fd;
+        z-index: -1;
+    }
+    @media (max-width: 1024px) {
+        padding: 60px 0;
+    }
+    .footer_logo {
+        text-align: center;
+        a {
+            font-size: auto;
+            font-weight: 600;
+            padding: 7px;
+            border-radius: 5px;
+            background: linear-gradient(to right, $primary-color 0%, $primary-color2 100%),
+                radial-gradient(circle at top left, $primary-color, $primary-color2);
+            color: white;
+            letter-spacing: 1.4px;
+        }
+        h4 {
+            font-size: 20px;
+            color: #fff;
+            margin-top: 35px;
+            text-transform: uppercase;
+        }
+    }
+    .footer_social {
+        text-align: center;
+        margin: 25px 0px 30px;
+        a {
+            padding: 0 20px;
+            img {
+                // filter: grayscale(1\00%);
+                width: 22px;
+                @include transition();
+                @media (max-width: 576px) {
+                    font-size: 25px;
+                }
+                &:hover {
+                    filter: none;
+                }
+            }
+        }
+    }
+
+    .footer_bottom {
+        text-align: center;
+        p {
+            margin-bottom: 0;
+        }
+        a {
+            color: $primary-color2;
+        }
+    }
+}
+
+/* End Footer Area css
+============================================================================================ */
