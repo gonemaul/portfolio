@@ -17,11 +17,9 @@
                  <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                      <ul class="nav navbar-nav menu_nav justify-content-end">
                          <li class="nav-item {{ Route::is('home') ? 'active' : '' }}"><a class="nav-link"
-                                 href="{{ route('home') }}">Home</a></li>
-                         <li class="nav-item {{ Route::is('about') ? 'active' : '' }}"><a class="nav-link"
-                                 href="#about_area">About</a></li>
-                         <li class="nav-item {{ Route::is('service') ? 'active' : '' }}"><a class="nav-link"
-                                 href="#service_area">Services</a></li>
+                                 href="{{ route('home') }}" id="home">Home</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                         <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
                          <li class="nav-item {{ Route::is('portfolio*') ? 'active' : '' }}"><a class="nav-link"
                                  href="{{ route('portfolio') }}">Portfolio</a></li>
                          <li class="nav-item {{ Route::is('blog') ? 'active' : '' }}"><a class="nav-link"

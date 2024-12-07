@@ -6,6 +6,15 @@
 .mb-30 {
     margin-bottom: 30px;
 }
+.border {
+    border-radius: 7px;
+    border-color: 1px solid $dark-mode;
+}
+.label {
+    color: $text-color;
+    font-weight: 450;
+    margin-left: 5px;
+}
 
 .sample-text-area {
     padding: 100px 0px;
@@ -47,6 +56,9 @@
         margin-bottom: 30px;
         color: $title-color;
     }
+}
+.text-dark {
+    color: $dark-mode;
 }
 .title_color {
     color: $title-color;
@@ -793,6 +805,7 @@ h6 {
     width: 100%;
     line-height: 40px;
     border: none;
+    border-radius: 7px;
     outline: none;
     background: #f9f9ff;
     padding: 0 20px;
@@ -1331,9 +1344,10 @@ h6 {
 
 .default-select .nice-select {
     border: none;
-    border-radius: 0px;
+    border-radius: 7px;
     height: 40px;
-    background: #fff;
+    background: #f9f9ff;
+    border: 1px solid #e0e0e0;
     padding-left: 20px;
     padding-right: 40px;
 }

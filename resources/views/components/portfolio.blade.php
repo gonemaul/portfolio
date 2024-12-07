@@ -1,12 +1,18 @@
     <!--================Start Portfolio Area =================-->
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-7">
                 <div class="main_title text-left" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>quality work <br>
-                        Recently done project </h2>
+                    <h2>Project</h2>
                 </div>
             </div>
+            @if (isset($RowButton))
+                <div class="col-lg-5 text-end">
+                    <a class="primary_btn px-2 mr-2" href="{{ route('admin_portfolio_create') }}">
+                        Tambah Project
+                    </a>
+                </div>
+            @endif
         </div>
         <div class="filters portfolio-filter">
             <ul>

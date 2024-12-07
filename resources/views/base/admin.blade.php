@@ -19,7 +19,7 @@
     @endphp
 
     @foreach ($files as $file)
-        {{-- <link rel="stylesheet" href="{{ asset('build/assets/' . basename($file)) }}" /> --}}
+        <link rel="stylesheet" href="{{ asset('build/assets/' . basename($file)) }}" />
     @endforeach
 
     @vite('resources/scss/app.scss')

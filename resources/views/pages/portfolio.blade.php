@@ -3,13 +3,9 @@
 
 @section('content')
     @include('components.header')
-    @include('components.banner', [
-        'title' => 'Portfolio',
-        'link' => 'Portfolio',
-    ])
 
     <!--================Start Portfolio Area =================-->
-    <section class="portfolio_area mt-5" id="portfolio">
+    <section class="portfolio_area" id="portfolio" style="padding-top: 140px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -221,6 +217,5 @@
     </section>
     <!--================End Portfolio Area =================-->
 
-    @include('components.news-letter')
     @include('components.footer')
 @endsection
